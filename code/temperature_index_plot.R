@@ -25,7 +25,7 @@ read_csv("data/GLB.Ts+dSST.csv", skip = 1, na = "***") %>%
         plot.subtitle = element_text(size = 10, 
                                      margin = margin(b=20)),
         legend.position = c(0.15, 0.9),
-        legend.title = element_text(size = 0))
+        legend.title = element_text(size = 0),
         legend.key.height = unit(10, "pt"))
 
 ggsave("figures/temperature_index_plot.png", width=6, height=4)
